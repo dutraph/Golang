@@ -9,5 +9,5 @@ func main() {
 	fmt.Println(b)
 	fmt.Println(c)
 
-	fmt.Printf("%v - %T\n%v - %T\n%v - %T\n", x, x, y, y, z, z)
+	fmt.Printf("%v - %T\n%v - %T\n%v - %T\n", a, a, b, b, c, c)
 }
