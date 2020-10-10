@@ -10,7 +10,13 @@ var yy = "Im a String too"
 var g int = 3
 var j float64 = 3.2
 
+type hd int
+
+var h hd = 34
+
 func main() {
+	cachorroquente := hd(23)
+	fmt.Printf("%v - %T\n", cachorroquente, cachorroquente)
 	/*
 	* a funcao Println alem de imprimir na tela, retorna um int e erros, mas se nao quisermos que um desses valores sejao usados
 	* devemos apenas usar um _ no seu lugar conhecido como Blank Identifier
