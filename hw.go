@@ -10,13 +10,7 @@ var yy = "Im a String too"
 var g int = 3
 var j float64 = 3.2
 
-type hd int
-
-var h hd = 34
-
 func main() {
-	cachorroquente := hd(23)
-	fmt.Printf("%v - %T\n", cachorroquente, cachorroquente)
 	/*
 	* a funcao Println alem de imprimir na tela, retorna um int e erros, mas se nao quisermos que um desses valores sejao usados
 	* devemos apenas usar um _ no seu lugar conhecido como Blank Identifier
@@ -49,9 +43,6 @@ func main() {
 	fmt.Printf("re-declared x: Value = %v, Type = %T\n", x, x)
 	fmt.Printf("k: Value = %v, Type = %T\n", k, k)
 
-	h := 2
-	qualquercoisa(h)
-
 	// O valor zero é o valor inicial da variavel antes de ser inicializada.
 	//  - int: 0
 	//  - floats: 0.0
@@ -66,27 +57,5 @@ func main() {
 
 	// Para atribuir o valor de j (float64) que é 3.2 para um int fazemos o seguinte
 	h = int(j) // j na forma int vale 3, logo:. h = 3
-	qualquercoisa(h)
-}
-
-var a int
-var b float64
-var c string
-var ç bool
-
-func valorZero(x int, y float64, z string, ç bool) {
-	fmt.Printf("Int zero = %v\n", x)
-	fmt.Printf("float zero = %v\n", y)
-	fmt.Printf("String zero = %v\n", z)
-	fmt.Printf("Boolean zero = %v\n", ç)
-}
-
-func qualquercoisa(x int) {
-	fmt.Println(y) // Isso funciona pois y foi declarado PLS (Escopo do nivel Pacote)
-	fmt.Printf("Valor de qualquer coisa  = %v\n", x)
-	if x == 0 {
-		fmt.Println("é zero")
-	} else {
-		fmt.Printf("é %v\n", x)
-	}
+	fmt.Println(h)
 }
